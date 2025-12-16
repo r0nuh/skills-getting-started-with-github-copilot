@@ -93,8 +93,8 @@ section h3 {
 }
 
 .participants-list {
-  list-style-type: disc;
-  margin: 0 0 0 18px;
+  list-style-type: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -102,6 +102,28 @@ section h3 {
   padding: 4px 0;
   color: #333;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Unregister (delete) button next to each participant */
+.unregister-btn {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.unregister-btn:hover {
+  color: #b71c1c;
+  background-color: rgba(198, 40, 40, 0.05);
+}
+
+.participant-email {
+  overflow-wrap: anywhere;
 }
 
 .no-participants {
